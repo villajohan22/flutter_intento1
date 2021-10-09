@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_intento1/PageStack.dart';
 
 import 'MyHomePage.dart';
 
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "JOHAN",
-      theme: ThemeData(primarySwatch: Colors.amber),
+      title: "App ibagirls",
+      theme: ThemeData(primarySwatch: Colors.blue),
       initialRoute: 'home',
       routes: {
         'home': (BuildContext context) => MyHomePage(),
+        'stack': (BuildContext context) => PageStack(),
       },
     );
   }
